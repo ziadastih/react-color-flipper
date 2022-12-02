@@ -1,0 +1,87 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary-5: hsl(205, 78%, 60%);
+
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+
+  --clr-black: #222;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clr-primary-10);
+}
+
+nav {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: var(--dark-shadow);
+}
+
+nav h1 {
+  text-transform: capitalize;
+  color: var(--clr-primary-5);
+}
+
+.nav-btns-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-transform: capitalize;
+  color: var(--clr-black);
+  cursor: pointer;
+}
+
+main {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.color-container {
+  width: 80vw;
+  height: 100px;
+  background-color: #222;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.color-container h2 {
+  color: white;
+  font-size: 20px;
+}
